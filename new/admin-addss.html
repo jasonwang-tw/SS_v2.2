@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=768px; initial-scale=0.4; maximum-scale=1.0;minimum-scale=1.0; user-scalable=0;">
+    <title>微笑秘密│Smile Secret</title>
+    <!--網頁內容的描述(description)-->
+    <meta name="description" content="">
+    <!--網頁搜尋的關鍵語(keyword)-->
+    <meta name="keywords" content="">
+    <link rel="next" href="/next" />
+    <link rel="prev" href="/prev" />
+    <link rel="shortcut icon" href="../ss.png">
+    <link href="../css/style2.0.css" rel="stylesheet">
+    <link href="css/rwd.css" rel="stylesheet">
+    <link href="../css/magnific-popup.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/summernote.css">
+</head>
+
+<body>
+    <!-- 通知視窗 -->
+    <div class="popup popup-del">
+        <img src="images/popup-close.png" alt="" class="popup-close">
+        <div class="scrollbox">
+            <h3 class="popupbox popup-title">即將刪除此項目</h3>
+            <hr>
+            <p class="popupbox important-text">如確認刪除請繼續執行。</p>
+            <hr>
+            <div class="popupbox popup-buttonbox">
+                <div class="popup-button">確認</div>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup-file">
+        <img src="images/popup-close.png" alt="" class="popup-close">
+        <div class="scrollbox">
+            <h3 class="popupbox popup-title">新增附加檔案</h3>
+            <hr>
+            <p class="popupbox important-text">可上傳的附件檔案規格有： gif、jpeg、mp4、mp3</p>
+            <hr>
+            <div class="popupbox-content">
+                <p>附加檔案文字說明</p>
+                <input type="text" name="" value="" placeholder="" class="error">
+                <p>附加檔案選擇</p>
+                <div class="file-selectbox">
+                    <input type="file" name="" placeholder="" class="fileup file-select" id="upload" accept="image/gif, image/jpeg, video/mp4, audio/*">
+                    <input type="text" name="" value="" placeholder="" style="width:74%;" class="sidebyside file-name">
+                    <input type="button" name="" value="選取檔案" placeholder="" style="width:24%;" class="sidebyside">
+                </div>
+            </div>
+            <hr>
+            <div class="popupbox popup-buttonbox">
+                <div class="popup-button">確認</div>
+            </div>
+        </div>
+    </div>
+    <img src="images/menu_04.png" alt="menu">
+    <div class="menubg"></div>
+    <!-- 側邊選單 -->
+    <div class="menu">
+        <div class="menutop">
+            <img src="../images/menu_03.png" alt="">
+            <img src="../images/menu_05.png" alt="" class="menuover">
+        </div>
+        <hr>
+        <ul class="member longin">
+            <a href="../index.html">
+                <li>會員登出</li>
+            </a>
+            <a href="one-page-payselect.html">
+                <li>升級方案</li>
+            </a>
+            <a href="admin-user-information.html">
+                <li>編輯個人資料</li>
+            </a>
+        </ul>
+        <hr>
+        <div class="infobox">
+            <ul class="company">
+                <li>COMPANY</li>
+                <a href="one-page-about.html">
+                    <li>關於微笑秘密</li>
+                </a>
+                <a href="one-page-content.html">
+                    <li>聯絡資訊</li>
+                </a>
+            </ul>
+            <ul class="info">
+                <li>INFO</li>
+                <a href="../user_admin_qa.html">
+                    <li>FAQ</li>
+                </a>
+                <a href="one-page-privacy.html">
+                    <li>使用者條款</li>
+                </a>
+                <a href="one-page-userrules.html">
+                    <li>隱私政策</li>
+                </a>
+            </ul>
+            <ul class="service">
+                <li>COSTOMER SERVICE</li>
+                <a href="admin-index.html">
+                    <li>寫秘密</li>
+                </a>
+                <a href="../user_admin_callplan_index.html">
+                    <li>謝幕計畫</li>
+                </a>
+                <a href="../user_admin_will_index.html">
+                    <li>謝幕詞</li>
+                </a>
+                <a href="../user_admin_desire_index.html">
+                    <li>許願</li>
+                </a>
+            </ul>
+            <ul class="also">
+                <li>ALSO ON</li>
+                <a href="https://goo.gl/Yi07X8">
+                    <li>Facebook</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <!-- 第一區塊 -->
+    <main>
+        <div class="sidebyside admin-left">
+            <div class="scrolltofixed-box">
+                <a href="admin-index.html" title="">
+                    <img src="../images/footer_logo_24.png" alt="" width="200">
+                </a>
+                <div class="userbox">
+                    <div class="sidebyside user-left">
+                        <div class="imgbox user-imgbox">
+                            <a href="../new/admin-user-information.html" title=""><img src="images/user.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="sidebyside user-right">
+                        <div class="textetc us-id"><a href="admin-user-information.html" title="">justin wu</a></div>
+                        <div class="sidebyside user-button user-status">一般會員</div>
+                        <a href="one-page-payselect.html" title="" class="sidebyside user-button user-up">升級</a>
+                        <div class="progress-container">
+                            <div class="progress" style="width:30%"></div>
+                        </div>
+                        <p class="progress-info">30 MB 0f 100 MB used</p>
+                        <ul class="user-menu">
+                            <li class="menu-one"><a href="admin-index.html">秘密匣</a></li>
+                            <li class="menu-two"><a href="admin-ss-safeman.html">保管人<span class="remind">3</span></a></li>
+                            <li class="menu-three"><a href="admin-ss-bookman.html">委託人<span class="remind">1</span></a></li>
+                        </ul>
+                        <a href="admin-ss-msbox.html" title="" class="sidebyside user-button receiverbox">信件匣<span class="remind">99</span></a>
+                        <a href="http://www.youtube.com/watch?v=0O2aH4XLbto" title="" class="sidebyside user-up receiverbox video-slamp-link popup-youtube">教學影片</a>
+                    </div>
+                </div>
+                <div class="rule">
+                    <a href="one-page-userrules.html">使用條款</a>
+                    <a href="one-page-privacy.html">隱私權政策</a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebyside admin-right">
+            <ul class="breadcrumbs">
+                <li><a href="admin-index.html">秘密匣</a></li> >
+                <li><a href="admin-addressee.html">秘密收件人 : jacky</a></li> >
+                <li>新增秘密</li>
+            </ul>
+            <div class="ssbox ss-addbox">
+                <div class="popupbox">
+                    <h4 class="sidebyside-middle">秘密標題</h4>
+                    <input type="text" name="" value="" placeholder="請輸入標題" class="sidebyside-middle addss-input-title edit-input-style">
+                </div>
+                <hr>
+                <div class="popupbox">
+                    <h4 class="sidebyside">選擇秘密類型</h4>
+                    <select name="type-list" class="addss-input">
+                        <option value="death">死亡殞落</option>
+                        <option value="time">時間信秘密</option>
+                        <option value="book">事件簿秘密</option>
+                    </select>
+                </div>
+                <div class="popupbox addss-typebox addss-typebox-death">
+                    <span class="remind sidebyside addss-explain">!</span>
+                    <div class="sidebyside addss-text-death">
+                        <p>以下共同保管人執行死亡回報後，
+                            <br> 則會立即將此封秘密訊息發送給指定收件人
+                            <strong>○ ○ ○ </strong>。</p>
+                        <hr>
+                        <h2 class="sidebyside deathman-title">您尚未設定保管人。</h2>
+                        <hr>
+                        <h2 class="sidebyside deathman-title">您的保管人</h2>
+                        <ul class="sidebyside death-list">
+                            <li>
+                                <div class="sidebyside imgbox">
+                                    <img src="images/user.png" alt="">
+                                </div>
+                                <div class="sidebyside">
+                                    <h2>Jacky</h2>
+                                    <p class="addtime deathman-mail">jacky@ecodes.com.tw</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sidebyside imgbox">
+                                    <img src="images/user.png" alt="">
+                                </div>
+                                <div class="sidebyside">
+                                    <h2>Jacky</h2>
+                                    <p class="addtime deathman-mail">jacky@ecodes.com.tw</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sidebyside imgbox">
+                                    <img src="images/user.png" alt="">
+                                </div>
+                                <div class="sidebyside">
+                                    <h2>Jacky</h2>
+                                    <p class="addtime deathman-mail">jacky@ecodes.com.tw</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="popupbox addss-typebox addss-typebox-time">
+                    <span class="remind sidebyside addss-explain">!</span>
+                    <p class="sidebyside addss-text">若選擇時間信，系統會在您指定時間內將此封時間秘密訊息寄送給指定收件人<strong>○ ○ ○ </strong>。
+                    </p>
+                    <input type="text" name="" value="" placeholder="輸入要送達的時間" class="sidebyside addss-input addss-input-w" id="datepicker">
+                </div>
+                <div class="popupbox addss-typebox addss-typebox-book">
+                    <span class="remind sidebyside addss-explain">!</span>
+                    <p class="sidebyside addss-text">若選擇事件簿，您指定的保管執行人，會用手動方式觸發事件時機，寄出此事件秘密到○ ○ ○ 。
+                        <br>您必須在”觸發時機條件”欄位中，清楚寫下您希冀此訊息寄出的時間點。
+                        <br>
+                        <br>Ex:我兒子大學畢業典禮當天、我女兒結婚典禮…等等。
+                        <br>
+                        <br><strong>※安心保證:
+                        <br>微笑秘密以保帳您的秘密隱私為首要考量。
+                        <br>保管執行人僅能看到此封秘密信件標題、收件人與秘密寄出時機保管執行人是絕對無法看到信件的內容，請你放心 :)</strong>
+                    </p>
+                    <div class="sstypebookbox sidebyside">
+                        <input type="text" name="" value="" placeholder="寫下觸發時機條件" class="error">
+                        <select name="" class="custman">
+                            <option selected>請選擇您的事件簿保管人...</option>
+                            <option value="">jacky</option>
+                            <option value="">jason</option>
+                            <option value="">kate</option>
+                        </select>
+                        <div class="error">
+                            <span class="sidebyside remind">!</span>
+                            <p class="sidebyside">請先建立秘密保管人。</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="popupbox">
+                    <div class="editor">
+                        <div class="summernote"></div>
+                    </div>
+                    <div class="ssimgbox-info">
+                        <img src="../new/images/icon-button_03.png" alt="" class="sidebyside att-files-icon">
+                        <div class="sidebyside addss-text">
+                            <h4 class="att-files-title">附加檔案</h4>
+                            <p>可上傳的附件檔案規格有： gif、jpeg、mp4、mp3</p>
+                        </div>
+                        <div class="popup-button popup-button3 addssimg addfile-button">
+                            新增附加檔案
+                        </div>
+                    </div>
+                </div>
+                <div class="popupbox popbox-flie">
+                    <div class="file-list">
+                        <img src="../new/images/icon-button_07.png" alt="" class="sidebyside att-files-icon file-list-icon file-list-icon2">
+                        <div class="sidebyside addss-text file-list-addfile">
+                            <h4 class="att-files-title">檔案說明文字檔案說明文字檔案說明文字檔案說明文字檔案說明文字檔案說明文字檔案說明文字檔案說明文字檔案說明文字</h4>
+                            <p class="sidebyside filedate textetc">檔案名稱&nbsp;&nbsp;&nbsp;photophotophotophotophotophotophoto.jpeg</p>
+                            <p class="sidebyside filesize">檔案大小&nbsp;&nbsp;&nbsp;200kb</p>
+                        </div>
+                        <img src="../new/images/icon-button_10.png" alt="" class="del-file">
+                    </div>
+                    <hr>
+                    <div class="file-list">
+                        <img src="../new/images/icon-button_07.png" alt="" class="sidebyside att-files-icon file-list-icon file-list-icon2">
+                        <div class="sidebyside addss-text file-list-addfile">
+                            <h4 class="att-files-title">檔案說明文字</h4>
+                            <p class="sidebyside filedate textetc">檔案名稱&nbsp;&nbsp;&nbsp;photo.jpeg</p>
+                            <p class="sidebyside filesize">檔案大小&nbsp;&nbsp;&nbsp;200kb</p>
+                        </div>
+                        <img src="../new/images/icon-button_10.png" alt="" class="del-file">
+                    </div>
+                </div>
+                <hr>
+                <div class="popupbox sssubmitbox">
+                    <div class="popup-button popup-button2">
+                        取消
+                    </div>
+                    <div class="popup-button">
+                        儲存
+                    </div>
+                </div>
+                <hr>
+                <div class="popupbox add-sstime">
+                    <p class="addtime">秘密最後更新時間 2016/10/13 下午7:29</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/jquery-scrolltofixed-min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/summernote.js"></script>
+    <script src="../js/summernote-zh-TW.min.js"></script>
+    <script src="../js/jquery-scrollLock.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript">
+    // $( "#datepicker" ).datepicker();
+    $("#datepicker").datepicker({
+        dateFormat: 'yy-mm-dd'
+    });
+    $('.popup-youtube').magnificPopup({
+        type: 'iframe'
+    });
+    //浮動鎖定
+    $('.scrolltofixed-box').scrollToFixed({
+        zIndex: 0,
+        marginTop: 10,
+        minWidth: 1024,
+    });
+    $('img[alt="menu"]').click(function() {
+        $('.menu').addClass('menu_right');
+        $('.menubg').stop().fadeIn("fast");
+    });
+    $('.addss').click(function() {
+        $('.addss-man,.menubg').stop().fadeIn("fast");
+    });
+    $('.editss').click(function() {
+        $('.addss-editman,.menubg').stop().fadeIn("fast");
+    });
+    $('.addfile-button').click(function() {
+        $('.popup-file,.menubg').stop().fadeIn("fast");
+    });
+    $('.delss,.del-file,.ssimgbox .remind').click(function() {
+        $('.popup-del,.menubg').stop().fadeIn("fast");
+    });
+    $('.imgclick').click(function() {
+        $('.popup-userimg,.menubg').stop().fadeIn("fast");
+    });
+
+    $('.menubg,.menuover').click(function() {
+        $('.menu').removeClass('menu_right');
+        $(".menubg").fadeOut("fast");
+        $(".popup").fadeOut("fast");
+    });
+    $('.popup-close').click(function() {
+        $('.popup,.menubg').stop().fadeOut("fast");
+    });
+
+    //鎖定視窗
+    $('.scrollbox,.menubg,.menu').scrollLock();
+    // 文字編輯器
+    $('.summernote').summernote({
+        lang: 'zh-TW',
+        minHeight: 250,
+        fontNames: ['微軟正黑體', 'Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Impact', 'Times New Roman', 'Verdana'],
+        toolbar: [
+            // [groupName, [list of button]]\
+            ['font', ['fontname', 'fontsize']],
+            ['fontstyle', ['bold', 'italic', 'underline', 'clear']],
+            // 樣式
+            // ['style', ['style']], 
+            // 刪除上標下標
+            // ['font', ['strikethrough', 'superscript', 'subscript']], 
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['table', ['table']],
+            // 預覽
+            //['view', ['fullscreen', 'codeview']], 
+            // 行高
+            //['height', ['height']], 
+            // 圖片/連結/影片/水平線/程式碼預覽/全螢幕/復原/重做/幫助
+            // ['slamp', ['picture', 'link', 'video', 'hr', 'codeview', 'fullscreen', 'undo', 'redo', 'help']], 
+        ],
+        disableDragAndDrop: true, //禁止拖曳
+        placeholder: '請輸入您的秘密...'
+    });
+    //依照選項出現細節選單
+    $("select[name=type-list]").change(function() {
+        if ($('select[name="type-list"] option[value="death"]').is(':selected')) {
+            $('.addss-typebox-death').css('display', 'block');
+        } else {
+            $('.addss-typebox-death').css('display', 'none');
+        };
+        if ($('select[name="type-list"] option[value="time"]').is(':selected')) {
+            $('.addss-typebox-time').css('display', 'block');
+        } else {
+            $('.addss-typebox-time').css('display', 'none');
+        };
+        if ($('select[name="type-list"] option[value="book"]').is(':selected')) {
+            $('.addss-typebox-book').css('display', 'block');
+        } else {
+            $('.addss-typebox-book').css('display', 'none');
+        };
+    });
+    $(".file-select").change(function() {
+        // var file_path=$(this).val();  
+        //取得input type=file的path 
+
+        // 取得input filename*須設定ID  
+        var fullPath = document.getElementById('upload').value;
+        if (fullPath) {
+            var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
+            var filename = fullPath.substring(startIndex);
+            if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
+                filename = filename.substring(1);
+            }
+        }
+        //丟到input type=text內   
+        $(".file-name").val(filename);
+
+    });
+    </script>
+</body>
+
+</html>

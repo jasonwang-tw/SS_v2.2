@@ -1,0 +1,2039 @@
+@charset "UTF-8";
+
+/**
+* 
+* @authors EOCDES jason
+* @date    2016-10-11
+* @version v2.0
+*/
+
+.sidebyside,
+.breadcrumbs li,
+.editpassword input {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sidebyside-middle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sidebyside-bottom {
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.textetc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.delss,
+.editss,
+.popup-button,
+img[alt="menu"],
+.addss,
+.popup-close,
+img[alt="camera"],
+.imgclick,
+.addssms,
+img.del-file,
+label,
+input[type=submit],
+.safeman-buttonbox div,
+.addsafeman,
+.popup-button2 {
+    cursor: pointer;
+}
+
+a,
+a:hover,
+.menu li,
+.menu li:hover,
+.menu,
+.menu_right,
+.ss-order-button div ul li,
+.ss-order-button div ul li:hover {
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0;
+    -o-transition: all 0.5s ease 0;
+}
+
+.imgbox,
+.userimgview {
+    border-radius: 99px;
+    text-align: center;
+    border: 1px solid #EAEAEA;
+    overflow: hidden;
+}
+
+.popup-imgup,
+.ssbox,
+.popup-button,
+.ssimgbox,
+.file-selectbox {
+    /*overflow: hidden;*/
+    position: relative;
+}
+
+
+/*上傳按鈕*/
+
+.fileup {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    z-index: 99;
+}
+
+
+/*彈跳視窗按鈕定義*/
+
+.popup-button,
+.addsafeman {
+    padding: 10px 25px;
+    background-color: #8ca4c5;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.popup-button2,
+.ss-flie-button a,
+.ms-system,
+.star-button,
+.ido {
+    border: 1px solid #CDD8E8;
+    background-color: white;
+}
+
+div.popup-button3 {
+    background-color: white;
+    color: black
+}
+
+div.popup-button {
+    display: inline-block;
+}
+
+
+/*單選複選按鈕樣式*/
+
+input[type=radio],
+input[type=checkbox] {
+    display: none
+}
+
+
+/*點選前*/
+
+input[type=radio]+label,
+input[type=checkbox]+label {
+    width: 20px;
+    height: 20px;
+    margin: -2px 5px 0 15px;
+    border: 1px solid #D4D4D4;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+/*點選後*/
+
+input[type=radio]:checked +label,
+input[type=checkbox]:checked+label {
+    background: url(../images/checked_03.png) no-repeat center;
+}
+
+input[type=checkbox]+label,
+.joinbox p,
+.prompt p {
+    margin: 1px 10px 10px 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-family: PingFangTC-Medium, xingothic-tc, Microsoft JhengHei, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background: url(../new/images/admin-bg_01.jpg);
+    margin: 0
+}
+
+body::-webkit-scrollbar,
+.scrollbox::-webkit-scrollbar,
+.menu::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8ca4c5;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #E3E3E3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+pre {
+    padding: 3px 10px;
+    border-left: 5px solid #8ca4c5;
+    margin: 10px 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+b,
+strong {
+    font-weight: 700
+}
+
+
+/*dfn {
+    font-style: italic
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}*/
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+    opacity: 0.5;
+    border-top: 1px solid #BFD1DD;
+    border-bottom: none;
+    margin: 0;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: inherit;
+    white-space: pre-line;
+    font-size: 1em
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto
+}
+
+optgroup {
+    font-weight: 700
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td,
+th {
+    padding: 0
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+
+button {
+    cursor: pointer;
+    overflow: visible
+}
+
+button,
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-transform: none
+}
+
+input:focus,
+select:focus,
+button:focus,
+.panel-body:focus,
+a:focus {
+    outline: none !important;
+}
+
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+input.error {
+    border-color: red;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 0;
+    background-color: #f5f8fa;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+select {
+    background-image: url(../new/images/icon-ss-a_03.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+span.remind {
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 99px;
+    text-align: center;
+    line-height: 25px;
+    background-color: red;
+}
+
+
+/*側邊欄*/
+
+.menu {
+    margin-right: -380px;
+    padding: 30px 40px;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1500;
+    right: 0;
+    background-color: rgba(235, 235, 235, 0.9);
+    overflow: auto;
+    /*overflow: scroll;*/
+}
+
+.menu hr {
+    margin: 20px 0;
+    opacity: 1;
+    border-top: 1px solid #aeaeaf;
+}
+
+.menu_right {
+    margin-right: 0;
+}
+
+.menu .menutop img {
+    display: inline-block;
+}
+
+.menu .menutop img:last-child {
+    float: right;
+    cursor: pointer;
+}
+
+.menu a>li,
+.infobox>ul>li:first-child {
+    padding: 10px 55px;
+}
+
+.member {
+    padding: 0;
+    margin: 0;
+}
+
+.longin a:first-child li {
+    background: url(../new/images/logout.png) 10px 2px no-repeat;
+}
+
+.longin a:nth-child(2) li {
+    background: url(../new/images/payup.png) 10px 2px no-repeat;
+}
+
+.longin a:nth-child(3) li {
+    background: url(../images/menu_15.png) 10px 2px no-repeat;
+}
+
+.login-no a:first-child li {
+    background: url(../images/menu_10.png) 10px 2px no-repeat;
+}
+
+.login-no a:nth-child(2) li {
+    background: url(../images/menu_13.png) 10px 2px no-repeat;
+}
+
+.login-no a:nth-child(3) li {
+    background: url(../images/menu_15.png) 10px 2px no-repeat;
+}
+
+.infobox ul {
+    padding: 0;
+}
+
+.infobox>ul>li,
+.infobox>ul>a>li {
+    padding: 5px 55px;
+}
+
+.infobox>ul>li:first-child {
+    color: #80ABD9;
+}
+
+.company>li:first-child {
+    background: url(../images/menu_17.png) 10px 9px no-repeat;
+}
+
+.info>li:first-child {
+    background: url(../images/menu_20.png) 10px 9px no-repeat;
+}
+
+.service>li:first-child {
+    background: url(../images/menu_22.png) 10px 9px no-repeat;
+}
+
+.also>li:first-child {
+    background: url(../images/menu_24.png) 10px 9px no-repeat;
+}
+
+.also {
+    margin-bottom: 100px;
+}
+
+.infobox a>li {
+    padding: 10px 55px;
+}
+
+.menu a:hover>li {
+    background-color: rgba(175, 175, 175, 0.25);
+}
+
+.menubg,
+.menubg-death,
+.menubg-go-w-check {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 1200;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+img[alt="menu"] {
+    height: auto;
+    right: 0;
+    margin: 15px;
+    position: fixed;
+}
+
+main {
+    margin: 0 auto;
+    width: 960px;
+    height: 100%;
+}
+
+.admin-left {
+    width: 23%;
+    text-align: right;
+    padding: 1% 2.5% 0 0;
+}
+
+.admin-left>a>img,
+.admin-left .scrolltofixed-box>a>img {
+    margin-left: -20px;
+}
+
+.admin-right {
+    width: 72%;
+    background-color: #f5f8fa;
+    margin-left: -0.3%;
+    padding: 1% 0 10% 2%;
+    min-height: 88%;
+}
+
+.userbox {
+    width: 230px;
+    margin-top: 30px;
+}
+
+.user-imgbox {
+    width: 50px;
+    height: 50px;
+}
+
+.user-right {
+    text-align: left;
+    width: 160px;
+    padding: 15px 0 0 10px;
+}
+
+.us-id {
+    /*background: url(../new/images/icon_06.png) no-repeat center right;*/
+    width: 140px;
+    /*padding-right: 15px;*/
+}
+
+.user-right progress {
+    background-color: inherit;
+    border: 1px solid #EAEAEA;
+}
+
+.user-button {
+    padding: 5px 10px;
+    border: 1px solid #BFD1DD;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.user-up,
+.editpassword input[type=submit],
+.ms-system-sent {
+    color: white;
+    background-color: #8ca4c5;
+    margin-left: 5px;
+}
+
+.progress-container {
+    height: 7.5px;
+    background-color: white;
+    border: 1px solid #EAEAEA;
+}
+
+.progress {
+    background-color: #8ca4c5;
+    height: 7.5px;
+}
+
+.progress-info {
+    font-size: 0.5em;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+}
+
+.user-menu {
+    padding-left: 0px;
+    margin: 40px 0;
+}
+
+.user-menu li {
+    padding-left: 40px;
+    margin-top: 20px;
+}
+
+.menu-one {
+    background: url(../new/images/icon_11.png) no-repeat center left;
+}
+
+.menu-two {
+    background: url(../new/images/icon_14.png) no-repeat center left;
+}
+
+.menu-three {
+    background: url(../new/images/icon_16.png) no-repeat center left;
+}
+
+.user-menu li span {
+    margin: -2px 15px 0 0;
+    background-color: #8ca4c5;
+    float: right;
+}
+
+.receiverbox {
+    line-height: 25px;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+.receiverbox span {
+    margin-left: 40px;
+    float: right;
+}
+
+input[type="search"] {
+    width: 100%;
+    padding: 8px 1.5%;
+    border-radius: 5px;
+    border: 1px solid #BFD1DD;
+    background: url(../new/images/search_04.jpg) no-repeat;
+    background-position: 99% 50%;
+    background-color: white;
+    margin-top: 10px;
+}
+
+input[type="search"]::-webkit-input-placeholder {
+    color: #BFD1DD;
+}
+
+input::-webkit-input-placeholder {
+    color: #E2E2E2;
+}
+
+.important-mail {
+    margin: 30px 0;
+    border: 1px solid #BFD1DD;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+}
+
+.ss-important-msbox {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.important-mail ul {
+    padding: 0;
+    margin: 0;
+}
+
+.important-mail ul h3 {
+    margin-left: 20px;
+}
+
+.important-mail ul h3,
+.mail-info p.addtime,
+.myss,
+.to,
+.popup-title,
+.ss-addbox h4,
+.breadcrumbs,
+.ss-mabox-title h2,
+.nossbox,
+.mail-info strong,
+.addtime,
+.popup-death strong {
+    color: #B6C6D0;
+}
+
+.deathman-title,
+.popupbox-content input[type=button],
+.other-link a,
+.popup-button2,
+.ss-flie-button a,
+.ms-system,
+.star-button,
+.footerbox h4,
+.onepage-box h2,
+.progress-info,
+.popup-imgup,
+.addssimg,
+.buylist p,
+.onepage-title,
+.popupbox-content .user-text-accept,
+.user-text-accept,
+.name,
+.ido {
+    color: #8ca4c5;
+}
+
+.important-mail li {
+    padding: 15px;
+    background-color: white;
+}
+
+
+/*.important-mail ul li:hover {
+    opacity: 0.5;
+}*/
+
+.moremail {
+    background: url(../new/images/more_11.png) no-repeat center left;
+    font-size: 0.8em;
+    float: right;
+    margin: 3px 20px 0 0;
+    padding-left: 25px;
+}
+
+.mailimg {
+    height: 40px;
+    width: 40px;
+}
+
+.mail-info {
+    margin: 5px 0 0 10px;
+    width: 90%;
+}
+
+.mail-info hr {
+    margin: 5px 0;
+}
+
+.mail-info p.bookdate {
+    max-width: 220px;
+    margin-right: 10px;
+}
+
+.mail-info strong {
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.mail-info p {
+    margin: 0;
+    color: #232323;
+    /*margin-left: 10px;*/
+}
+
+p.mail-title {
+    /*margin-top: 5px;*/
+}
+
+p.mail-date {
+    font-size: 0.85em;
+    padding: 2px 0 0 20px;
+}
+
+p.date-system {
+    background: url(../new/images/icon_42.png) no-repeat center left;
+}
+
+p.date-time {
+    background: url(../new/images/icon_27.png) no-repeat center left;
+}
+
+p.date-book {
+    background: url(../new/images/icon_34.png) no-repeat center left;
+}
+
+p.date-book {
+    background: url(../new/images/icon_34.png) no-repeat center left;
+}
+
+p.date-death {
+    background: url(../new/images/icon_53.png) no-repeat center left;
+}
+
+p.event {
+    background: url(../new/images/icon_51.png) no-repeat center left;
+}
+
+p.addtime {
+    margin: 0;
+    padding: 2px 0 0 20px;
+    font-size: 0.85em;
+    float: right;
+    background: url(../new/images/icon_23.png) no-repeat center left;
+}
+
+.typebox p {
+    font-size: 0.85em;
+    padding: 2px 0 0 20px;
+}
+
+p.type-title {
+    background: inherit;
+}
+
+.typebox p:last-child {
+    margin-left: 5px;
+}
+
+.myss {
+    margin-left: 25px;
+}
+
+.ssbox img {
+    width: 100%;
+    display: block;
+}
+
+.ssbox {
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #BFD1DD;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.ssbox-info {
+    width: 94%;
+    padding: 25px 3% 20px 3%;
+}
+
+.haveimg {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    bottom: 0;
+    z-index: 99;
+}
+
+.editbox {
+    float: right;
+}
+
+.editbox img {
+    margin-left: 10px;
+    width: auto;
+    display: inline-block;
+}
+.editbox a:hover{
+    opacity: 1;
+}
+
+.ssbox-info p,
+.ssbox-info h2 {
+    margin: 0 0 -3px 0;
+}
+
+.ssbox-info h2 {
+    max-width: 50%;
+}
+
+.ssbox-info .addtime,
+.add-sstime .addtime {
+    float: inherit;
+}
+
+p.ss-death {
+    background: url(../new/images/icon_53.png) no-repeat center left;
+}
+
+p.ss-time {
+    background: url(../new/images/icon_27.png) no-repeat center left;
+}
+
+p.ss-book {
+    background: url(../new/images/icon_51.png) no-repeat center left;
+}
+
+.ss-msinfo {
+    /*    float: right;*/
+    margin: 0px 0 0 10px;
+}
+
+.ss-msinfo p {
+    margin-left: 10px;
+    padding: 0 0 0 20px;
+}
+
+.userimg {
+    margin: -10px 10px 10px 0;
+}
+
+.error,
+.prompt {
+    padding: 15px 3%;
+}
+
+.error p {
+    width: 85%;
+    color: red !important;
+    margin: 1px 0 0 10px;
+}
+
+.prompt p {
+    width: 85%;
+    text-align: left !important;
+    margin: 1px 0 0 10px;
+    color: gray;
+}
+
+.rule {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: #b9c9d4;
+}
+
+.rule a {
+    margin-left: 15px;
+}
+
+.scrolltofixed-box {
+    min-height: 100%;
+}
+
+.addss {
+    background-color: #8ca4c5;
+    width: 70px;
+    height: 70px;
+    border-radius: 99px;
+    position: fixed;
+    bottom: 50px;
+    margin-left: 740px;
+    overflow: hidden;
+}
+
+
+/*起始頁面*/
+
+.nossbox {
+    padding: 50px 0;
+    text-align: center;
+}
+
+div.star-button {
+    width: 150px;
+    margin: 10px auto 0 auto;
+    display: inherit;
+}
+
+.video-slamp {
+    background: url(../images/footer_logo_24.png) no-repeat center;
+    background-color: white;
+    height: 400px;
+}
+
+.video-slamp-link {
+    margin: 0px;
+    width: 115px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/*通知視窗*/
+
+.popup {
+    width: 500px;
+    position: fixed;
+    z-index: 1999;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+}
+
+.popupbox {
+    margin: 0;
+    padding: 20px;
+}
+
+.popup p,
+.pupup-login p,
+.popupbox-content p.text-center {
+    text-align: center;
+}
+
+.popupbox-content {
+    padding: 30px 50px 70px 50px;
+    margin: 0;
+}
+
+.popupbox-content input {
+    padding: 5px 0;
+    text-indent: 10px;
+}
+
+.popupbox-content select {
+    padding: 7px;
+    background-position: 360px 12px;
+}
+
+.popupbox-content p {
+    text-align: left;
+}
+
+.popupbox-content p,
+.popupbox-content h2 {
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.important-text {
+    color: gray;
+    background-color: #f5f8fa;
+}
+
+.popup-buttonbox {
+    text-align: right;
+}
+
+.popup-buttonbox-center {
+    text-align: center;
+}
+
+.popup-close {
+    margin-top: 10px;
+    right: -70px;
+    height: auto;
+    position: absolute;
+}
+
+.addss-editman {
+    height: 70%;
+}
+
+.scrollbox {
+    height: 100%;
+    overflow-y: auto;
+}
+
+
+/*addressee 遺書收件人*/
+
+.breadcrumbs {
+    margin-bottom: 40px;
+    padding-left: 0px;
+}
+
+img[alt="camera"] {
+    width: 30px;
+    height: auto;
+    position: absolute;
+}
+
+p.viewinfo {
+    position: absolute;
+    right: 30px;
+    padding-left: 40px;
+    margin-top: -20px;
+    background: url(../new/images/icon_03.png) no-repeat center left;
+}
+
+.ss-msinfo-in {
+    margin-top: -50px;
+}
+
+.ssbox-info h1 {
+    margin: 0;
+}
+
+.addssms {
+    color: white;
+    background-color: #8ca4c5;
+    text-align: center;
+}
+
+.addssms h2 {
+    margin: 10px 0;
+}
+
+.userfcover {
+    background-color: white;
+    /*background-image: url(../new/images/bg-camara.png);*/
+    background-repeat: no-repeat;
+    background-position: center;
+    /*height: 320px;*/
+}
+
+.popupimgbox {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.userimgview {
+    background: url(../new/images/bg-camara.png) no-repeat center;
+    width: 150px;
+    height: 150px;
+    vertical-align: middle;
+}
+
+.userimg-button {
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.popup-imgup,
+.addssimg {
+    border: 1px solid #CDD8E8;
+    background-color: #f5f8fa;
+}
+
+.popup-imgedit {
+    margin-top: 10px;
+    cursor: context-menu;
+}
+
+.userfcover-up {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+/*新增遺書收件人*/
+
+.ss-addbox {
+    overflow: inherit;
+}
+
+.ss-addbox h4 {
+    margin: 0;
+}
+
+.addss-input {
+    float: right;
+    width: 50%;
+    /*padding: 10px;*/
+    height: 40px;
+    text-indent: 10px;
+    margin-top: -10px;
+}
+
+.addss-input-title {
+    width: 85%;
+    padding: 5px 0;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+.edit-input-style {
+    border: none;
+    background-color: white;
+}
+
+span.addss-explain {
+    background-color: #8ca4c5;
+}
+
+.addss-text,
+.addss-text-death {
+    margin: 0 0 0 10px;
+    width: 40%;
+    color: gray;
+}
+.addss-text strong,
+.addss-text-death strong{
+    color: #8ca4c5;
+}
+
+.addss-text-death {
+    width: 90%;
+}
+
+.addss-text-death p,
+.addss-text p {
+    margin-top: 0;
+}
+
+.addss-input-w,
+.sstypebookbox input {
+    padding: 8px;
+    background-color: white;
+}
+
+.sstypebookbox select {
+    height: 40px;
+    text-indent: 10px;
+    background-color: white;
+}
+
+#ui-datepicker-div {
+    border-radius: 5px;
+    margin-top: 10px;
+    /*position: absolute !important;*/
+    z-index: 9999 !important;
+    border: 1px solid #E0E0E0;
+    background-color: white;
+}
+
+.addss-typebox,
+.popbox-flie {
+    background-color: #f5f8fa;
+}
+
+.ssimgbox {
+    width: 100%;
+    height: 250px;
+    border: 1px solid #BFD1DD;
+    background: url(../new/images/bg-ssimg.png) no-repeat center;
+}
+
+.ssimgbox-info {
+    margin-top: 10px;
+}
+
+.ssimgbox-info .addss-text {
+    width: 67%;
+}
+
+.addssimg {
+    float: right;
+}
+
+
+/*.editor {
+    margin-top: 20px;
+}*/
+
+.editor p {
+    margin: 0;
+}
+
+.editor li {
+    list-style-type: inherit;
+}
+
+h4.att-files-title {
+    margin: 0 0 10px 0;
+}
+
+img.att-files-icon {
+    width: auto;
+    display: inline-block;
+}
+
+.file-list-icon2 {
+    margin-right: 10px;
+}
+
+img.del-file {
+    width: auto;
+    float: right;
+    margin-right: 10px;
+}
+
+.file-list {
+    padding: 15px 0;
+}
+
+.file-list-icon {
+    margin-top: 3px;
+}
+
+.file-list h4 {
+    color: black;
+}
+
+.file-list-addfile {
+    width: 60%;
+}
+
+.filesize {
+    margin-left: 40px;
+}
+
+.filedate {
+    width: 170px;
+    margin-bottom: 0;
+}
+
+.sssubmitbox {
+    text-align: right;
+}
+
+.sssubmitbox .popup-button {
+    text-align: center;
+    margin-left: 10px;
+}
+
+.ssimgbox .remind {
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.addss-typebox-time,
+.addss-typebox-book {
+    display: none;
+}
+
+.custman {
+    margin-top: 10px;
+}
+
+.sstypebookbox {
+    width: 49.5%;
+    margin-left: 22px;
+}
+
+.death-list {
+    margin: 15px 0;
+    padding-left: 20px
+}
+
+.death-list .imgbox {
+    background-color: white;
+    margin-right: 15px;
+}
+
+.deathman-title {
+    margin: 15px 0;
+}
+
+.death-list li {
+    margin-bottom: 15px;
+}
+
+.death-list h2 {
+    color: black;
+    margin: 5px 0 0 0;
+}
+
+p.deathman-mail {
+    color: #6E6E6E;
+    background: url(../new/images/icon-m_03.png) no-repeat center left;
+}
+
+.popupbox-content input[type=button] {
+    text-indent: 0;
+    background-color: white;
+}
+
+
+/*收件夾訊息*/
+
+.ss-ms-title {
+    margin: 0 0 0 40px;
+}
+
+.ss-ms-title1 {
+    width: 180px;
+}
+
+.ss-ms-title2 {
+    width: 80%;
+}
+
+.ss-ms-title3 {
+    width: 50%;
+}
+
+.ss-ms-box {
+    width: 49%;
+}
+
+.ss-custman {
+    float: right;
+    padding-right: 150px;
+}
+
+.ss-title-size {
+    width: 80px;
+    text-align: right;
+}
+
+.ss-type-text {
+    margin: 0 0 0 10px;
+    width: auto;
+}
+
+.ss-type-text-blue {
+    color: #8ca4c5
+}
+
+.ss-flie-button {
+    float: right;
+}
+
+.ss-flie-button a,
+.ms-system,
+.ms-system-sent {
+    padding: 3px 25px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+
+/*信件匣*/
+
+.ss-order-button {
+    background: url(../new/images/icon-ss_03.png) no-repeat;
+    background-position: 30px center;
+    padding-left: 60px;
+}
+
+.ss-order-button input,
+.ss-order-button div {
+    width: 100px;
+    padding: 5px 0;
+    margin-left: 10px;
+    border: none;
+    background-color: white;
+    background: url(../new/images/icon-ss-a_03.png) no-repeat;
+    background-position: right 10px;
+}
+
+.ss-order-button div ul {
+    position: absolute;
+    display: none;
+    z-index: 99;
+    border: 1px solid #BFD1DD;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.ss-order-button div ul li {
+    font-size: 0.85em;
+    background-color: white;
+    cursor: pointer;
+    width: 70px;
+}
+
+.ss-order-button div ul li:hover {
+    background-color: #F5F5F5;
+}
+
+.ss-order-button div:hover ul {
+    display: block;
+}
+
+.ss-mabox {
+    margin-left: 25px;
+}
+
+.ss-mabox-title h2 {
+    margin-bottom: 5px;
+}
+
+.ss-mabox-title p {
+    margin-top: 0;
+    color: #666666;
+}
+
+.ms-system,
+.ms-system-sent {
+    padding: 5px 20px;
+    font-size: 0.85em;
+    margin-top: 5px;
+    float: right;
+}
+
+.ms-system-sent {
+    border: none;
+}
+
+li.haveread {
+    background-color: #F5F5F5;
+}
+
+p.sent {
+    margin-right: 15px;
+    background-image: url(../new/images/icon_34.png);
+}
+
+
+/*個人資料修改*/
+
+.userimg-edit {
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+}
+
+.userimg-edit img {}
+
+.useredit-top-right {
+    float: right;
+    text-align: right;
+}
+
+.useredit-top-right div,
+.useredit-top-right a {
+    margin: 0 0 0 5px;
+    padding: 7px 20px;
+}
+
+.useredit-top-right p {
+    padding-left: 20px;
+    margin: 12px 0 0 0;
+    background: url(../new/images/edieicon_03.png) no-repeat 0px 4px;
+}
+
+.sexbox {
+    margin: 5px 10px 0 0;
+    float: right;
+}
+
+.editpassword {
+    width: 80%;
+}
+
+.editpassword input {
+    width: 35%;
+}
+
+.editpassword input,
+.feelbox {
+    padding: 5px 10px;
+    margin: 10px 0 0 10px;
+    background-color: white;
+}
+
+.editpassword input[type=submit] {
+    width: 20%;
+    float: right;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.ss-type-text-gray {
+    color: gray;
+}
+
+.feelbox {
+    padding-left: 0;
+    margin-top: -10px;
+    border: none;
+}
+
+.useredit-progress {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.popupbox .progress-info {
+    margin: 5px 0 0 0;
+}
+
+
+/*加入會員*/
+
+.admin-join-right {
+    padding: 0;
+    background: inherit;
+}
+
+.join-page {
+    background: inherit;
+}
+
+.pupup-join {
+    border: 1px solid #BFD1DD;
+    width: 500px;
+    margin-top: 120px;
+    border-radius: 5px;
+}
+
+.popupbox-content-join {
+    padding: 30px 50px 40px 50px;
+    background-color: #f5f8fa;
+}
+
+.popupbox-content-join input {
+    background-color: white;
+}
+
+.popupbox-content-join strong,
+.popupbox-content strong {
+    font-weight: normal;
+    float: right;
+    font-size: 0.85em;
+    color: red;
+}
+
+.popup-button-join {
+    width: 100%;
+}
+
+
+/*登入會員*/
+
+.other-link {
+    margin-top: 10px;
+    float: left;
+}
+
+.other-link a {
+    margin-left: 15px;
+}
+
+
+/*委託人*/
+
+.bookmanimg {
+    width: 70px;
+    height: 70px;
+    margin-top: -5px;
+    background-color: white;
+}
+
+.bookman-list {
+    padding-left: 20px;
+    margin: 50px 0;
+}
+
+.bookman-user {
+    margin-bottom: 40px;
+}
+
+.bookman-user h3 {
+    margin: 0;
+    font-weight: bold;
+    max-width: 250px;
+}
+
+.bookman-user h3+p {
+    margin: 0 0 0 10px;
+}
+
+.bookman-user .already {
+    margin: 0 10px 0 0;
+}
+
+.bookman-user h3+p,
+.bookman-user .already,
+.bookdate {
+    font-size: 0.85em;
+}
+
+.bookman-user hr {
+    margin: 5px 0;
+}
+
+.bookman-info {
+    width: 80%;
+    margin-left: 15px;
+}
+
+.bookman-buttonbox,
+.safeman-buttonbox {
+    float: right;
+}
+
+.bookman-buttonbox button {
+    border: none;
+    padding: 3px 0;
+    border-radius: 5px;
+    width: 90px;
+    font-size: 0.85em;
+}
+
+.bookman-date p {
+    max-width: 200px;
+    padding-left: 25px;
+}
+
+.bookman-mail {
+    max-width: 200px;
+    margin: 0;
+    background: url(../new/images/icon-bookman_03.png) no-repeat 0px 4px;
+}
+
+.bookman-phone {
+    margin: 0 0 0 20px;
+    background: url(../new/images/icon-bookman_05.png) no-repeat 0px 4px;
+}
+
+.accept-button {
+    background-color: #e1e8ed;
+}
+
+.cancel-button {
+    background-color: white;
+}
+
+.dtath-button {
+    color: white;
+    background-color: #333333;
+}
+
+h3.bookman-name {
+    max-width: 100px;
+}
+
+
+/*保管人*/
+
+.safeman-status {
+    background-color: white;
+    border: 1px solid #BFD1DD;
+    border-radius: 5px;
+    padding: 3px 10px;
+    margin-left: 10px;
+    font-size: 0.85em;
+}
+
+.safeman-buttonbox div {
+    margin-left: 20px;
+    padding-left: 25px;
+}
+
+.safeman-edit {
+    background: url(../new/images/icon-safeman_03.png) no-repeat 0px 3px;
+}
+
+.safeman-del {
+    background: url(../new/images/icon-safeman_05.png) no-repeat 0px 3px;
+}
+
+.addsafeman {
+    margin: auto;
+    padding: 12px 0;
+    width: 85%;
+    text-align: center;
+}
+
+.return {
+    color: #8ca4c5;
+    width: 150px;
+    /*margin: 20px;*/
+    /*display: block;*/
+    position: absolute;
+    margin: 30px;
+    right: 0;
+    background: url();
+}
+
+
+/*系統頁面*/
+
+.system-page {
+    /*padding: 1% 0 0 2%;*/
+}
+
+
+/*onepage*/
+
+.onepage-box {
+    padding: 100px 0;
+}
+
+.onepage-title {
+    margin-left: 30px;
+}
+
+footer {
+    background-color: #ececec;
+}
+
+.footerbox {
+    height: auto;
+    padding: 30px 0;
+}
+
+.footerbox h4 {
+    margin: 10px 0 10px 0;
+    font-size: 1.2em;
+}
+
+.footerbox li {
+    color: gray;
+    margin: 5px 0;
+}
+
+.copyright {
+    color: gray;
+    margin-top: 150px;
+}
+
+
+/*方案選擇*/
+
+.paypage {
+    height: auto;
+}
+
+.payupselect {
+    margin: 0;
+}
+
+.onepage-box table {
+    width: 100%;
+}
+
+.payuplist img {
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+
+.payuplist td,
+.payuplist th {
+    padding: 15px;
+    width: 120px;
+    text-align: center;
+    border: 1px solid rgba(191, 209, 221, 0.5);
+}
+
+.payuplist th {
+    vertical-align: top;
+    border-top: none;
+}
+
+.payuplist th p,
+.payuplist div {
+    font-size: 0.85em;
+    font-weight: normal;
+}
+
+.payuplist tr:last-child td {
+    border-bottom: none;
+}
+
+.payuplist tr td:first-child,
+.payuplist tr th:first-child {
+    width: 250px;
+    text-align: left;
+    border-left: none;
+}
+
+.payuplist tr td:last-child,
+.payuplist tr th:last-child {
+    border-right: none;
+}
+
+.payuplist tr td:nth-child(4),
+.payuplist tr th:nth-child(4),
+.payuplist tr td:nth-child(3),
+.payuplist tr th:nth-child(3) {
+    background-color: #f5f8fa;
+}
+
+.payuplist .popup-button,
+.payuplist .popup-button2 {
+    padding: 0;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+
+/*方案資料填寫*/
+
+h2.paygo-title {
+    margin: 0;
+    color: black;
+}
+
+.userpaygo-info p {
+    margin: 5px 0 5px 0px;
+}
+
+.userpaygo-info p:nth-child(3),
+.userpaygo-info p:nth-child(6),
+.userpaygo-info p:nth-child(7),
+.userpaygo-info p:nth-child(8),
+.userpaygo-info p:nth-child(11) {
+    margin-left: 20px;
+}
+
+.userpaygo-info-step2 .keyin>p {
+    width: 80px;
+    text-align: right;
+}
+
+.userpaygo-info-step2 input {
+    background-color: white;
+    padding: 10px;
+}
+
+.keyin>p {
+    margin-top: 12px;
+}
+
+.keyin {
+    margin: 20px 0;
+}
+
+.keyin input {
+    margin-left: 15px;
+    width: 300px;
+}
+
+.userpaygo-text {
+    width: 90%;
+}
+
+.userpaygo-textbox {
+    margin-left: 100px;
+}
+
+.paygo-check {
+    padding-left: 170px;
+}
+
+.buylist {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.buylist li {
+    font-size: 0.85em;
+    list-style-type: disc;
+}
+
+.buylist p {
+    font-size: 1.1em;
+}
+
+.buylist img {
+    height: auto;
+}
+
+
+/*關於微笑秘密*/
+
+.about-video {
+    height: 350px;
+}
+
+.aboutbox p {
+    color: #323232;
+}
+
+
+/*聯絡資訊*/
+
+.office {
+    margin: 20px 15px;
+}
+
+.contentbox li {
+    color: #B8B8B8;
+    margin: 5px;
+}
+
+.contentbox p {
+    color: black;
+    margin: 0 20px;
+}
+
+
+/*系統訊息死亡通知*/
+
+.popup-death,
+.menubg-death {
+    display: block;
+}
+
+div.ilife {
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    display: block;
+}
+
+
+/*其他*/
+
+.popupbox-content-join b {
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.popup-buttonbox-member a div {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.pay-other {
+    color: gray;
+    padding: 10px 0 0 70px;
+    margin: 0;
+}
+
+.pay-s {
+    background: url(../new/images/pay-s_03.png) no-repeat 5px 5px;
+}
+
+.pay-e {
+    background: url(../new/images/pay-e_03.png) no-repeat 5px 5px;
+}
+
+.reason {
+    width: 80%;
+}
+.pupup-pay{
+    width: 550px;
+}
+.addsafeman-addressee{
+    width: 100%;
+    margin-top: 15px;
+    padding: 8px 0;
+    text-align: center;
+}
+.addsafeman-addressee .remind {
+    display: inline-block;
+    margin-right: 10px;
+    text-indent: 2px;
+}
+
+span.remind-white {
+    background-color: white;
+    color: #8ca4c5;
+}
+
+select[name="safeman"]{
+    color: gray;
+}

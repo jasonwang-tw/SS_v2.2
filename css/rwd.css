@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/**
+* 
+* @authors EOCDES jason
+* @date    2015-07-23 14:08:53
+* @version v1.0
+*/
+
+@media only screen and (max-width: 1170px) {
+    .safebox {
+        width: 45%;
+    }
+    .mysafe {
+        text-align: center;
+    }
+    .masafeinfo {
+        text-align: left;
+    }
+    .usideain {
+        padding-top: 120px;
+    }
+    .mysafecust {
+        text-align: inherit;
+    }
+    .user {
+        display: none;
+    }
+    .username a[alt=user] {
+        display: block;
+        color: #909dbd;
+    }
+    .username a:nth-child(3) li {
+        padding-top: 10px;
+    }
+    .banner {
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .mysafeleft,
+    .mysaferight {
+        width: 80%;
+        text-align: left;
+    }
+    .mysafe {
+        text-align: center
+    }
+    .mysaferight {
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    footer table,
+    .userfooter table {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .usideain {
+        padding: 15% 0 15% 0;
+    }
+    .banner p {
+        margin: 50px 10px 0 0;
+    }
+    .banner:nth-child(2) p,
+    .banner:last-child p {
+        margin: 50px 0 0 10px;
+    }
+    .safeboxicon h4 {
+        width: 200px;
+    }
+    .safeboxicon p {
+        width: 155px;
+    }
+    .planstep {
+        width: 25%;
+    }
+    .silbar {
+        padding: 10%;
+    }
+    .silbar p,
+    .silbar li,
+    .usertext,
+    .palnbox h6 {
+        font-size: 0.7em;
+    }
+    .planefooter,
+    .payup_tit,
+    .palnleft,
+    .palnright,
+    .callplaninfo .myinfobox {
+        width: 100%;
+        overflow: hidden;
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .callplaninfo .myinfobox {
+        padding-top: 20px;
+    }
+    .planefooter,
+    .payup_tit {
+        text-indent: 5%
+    }
+    .callplan-footer-list {
+        display: none;
+    }
+    .bannerinfo {
+        font-size: 0.6em;
+    }
+}
+
+@media only screen and (max-width: 480px) {}

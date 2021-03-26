@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=768px; initial-scale=0.4; maximum-scale=1.0;minimum-scale=1.0; user-scalable=0;">
+    <title>微笑秘密│Smile Secret</title>
+    <!--網頁內容的描述(description)-->
+    <meta name="description" content="">
+    <!--網頁搜尋的關鍵語(keyword)-->
+    <meta name="keywords" content="">
+    <link rel="next" href="/next" />
+    <link rel="prev" href="/prev" />
+    <link rel="shortcut icon" href="../ss.png">
+    <link href="../css/style2.0.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link href="../css/magnific-popup.css" rel="stylesheet">
+    <link href="css/rwd.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 通知視窗 -->
+    <div class="popup popup-go-w-check">
+        <form action="" method="get" accept-charset="utf-8">
+            <h3 class="popupbox popup-title">寄送保管邀請</h3>
+            <hr>
+            <p class="popupbox important-text">即將寄送保管邀請至
+                <br><b class="user-text-accept">jacky@ecodes.com.tw</b>
+                <br>
+                <br>待對方回覆確認後即正式成為您的秘密保管人。</p>
+            <hr>
+            <div class="popupbox popup-buttonbox">
+                <button class="popup-button" type="submit">確認</button>
+            </div>
+        </form>
+    </div>
+    <div class="popup popup-addsafeman">
+        <img src="images/popup-close.png" alt="" class="popup-close">
+        <form action="" method="get" accept-charset="utf-8">
+            <h3 class="popupbox popup-title">新增秘密保管人</h3>
+            <hr>
+            <p class="popupbox important-text">當您邀請對方成為您祕密保管人時，對方可選擇接受或拒絕。
+                <br> 當你邀請送出後，若對方尚未接受成為你的保管人。
+                <br>
+                <br> 您可隨時取消對方為你的保管人權利。
+            </p>
+            <hr>
+            <div class="popupbox-content">
+                <p>秘密保管人姓名</p>
+                <input type="text" name="" value="" placeholder="">
+                <p>E-mail<strong>mail格式錯誤</strong></p>
+                <input type="email" name="" value="" placeholder="" class="error">
+                <p>連絡電話</p>
+                <input type="tel" name="" value="" placeholder="">
+            </div>
+            <hr>
+            <div class="popupbox popup-buttonbox">
+                <div class="popup-button go-w-check">下一步</div>
+            </div>
+        </form>
+    </div>
+    <div class="popup popup-userimg">
+        <img src="images/popup-close.png" alt="" class="popup-close">
+        <div class="scrollbox">
+            <h3 class="popupbox popup-title">收件人大頭照編輯</h3>
+            <hr>
+            <p class="popupbox important-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes。</p>
+            <hr>
+            <div class="popupbox popupimgbox">
+                <div class="sidebyside userimgview">
+                </div>
+                <div class="sidebyside userimg-button">
+                    <div class="popup-button popup-imgup">
+                        <input type="file" name="" value="" placeholder="" accept="image/*" class="fileup">上傳大頭照</div>
+                    <br>
+                    <div class="popup-button popup-button2 popup-imgedit ">刪除大頭照</div>
+                </div>
+            </div>
+            <hr>
+            <div class="popupbox popup-buttonbox">
+                <div class="popup-button">確認</div>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup-del">
+        <img src="images/popup-close.png" alt="" class="popup-close">
+        <div class="scrollbox">
+            <h3 class="popupbox popup-title">即將刪除此秘密</h3>
+            <hr>
+            <p class="popupbox important-text">如確認刪除請繼續執行。</p>
+            <hr>
+            <div class="popupbox popup-buttonbox">
+                <div class="popup-button">確認</div>
+            </div>
+        </div>
+    </div>
+    <div class="popup addss-editman">
+        <img src="images/popup-close.png" alt="" class="popup-close">
+        <div class="scrollbox">
+            <h3 class="popupbox popup-title">編輯秘密收件人資料</h3>
+            <hr>
+            <p class="popupbox important-text">請將收件人資訊填寫完整，
+                <br>以確保秘密訊息能 完整並寄達到他(她)的手上。
+            </p>
+            <hr>
+            <form action="" method="get" accept-charset="utf-8">
+                <div class="popupbox-content">
+                    <p>秘密收件人姓名</p>
+                    <input type="text" name="" value="" placeholder="" class="error">
+                    <p>選擇秘密收件人關係</p>
+                    <select name="">
+                        <option value="">父母</option>
+                        <option value="">伴侶</option>
+                        <option value="">子女</option>
+                        <option value="">朋友</option>
+                        <option value="">想感謝的人</option>
+                    </select>
+                    <p>生日</p>
+                    <input type="text" name="" value="" placeholder="" class="" id="datepicker">
+                    <!-- <input type="date" name="" value="" placeholder=""> -->
+                    <p>E-mail</p>
+                    <input type="email" name="" value="" placeholder="">
+                    <p>地址</p>
+                    <input type="text" name="" value="" placeholder="">
+                    <p>連絡電話</p>
+                    <input type="tel" name="" value="" placeholder="">
+                    <p>秘密保管人</p>
+                    <select name="safeman">
+                        <option selected>您的秘密保管人 (至少兩位)</option>
+                    </select>
+                    <div class="popup-button addsafeman-addressee">
+                        <!-- <span class="remind remind-white">!</span>
+ -->建立您的秘密保管人</div>
+                    <div class="error">
+                        <span class="sidebyside remind">!</span>
+                        <p class="sidebyside">請先建立秘密保管人。</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="popupbox popup-buttonbox">
+                    <button type="" class="popup-button">確認</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <img src="images/menu_04.png" alt="menu">
+    <div class="menubg"></div>
+    <!-- 側邊選單 -->
+    <div class="menu">
+        <div class="menutop">
+            <img src="../images/menu_03.png" alt="">
+            <img src="../images/menu_05.png" alt="" class="menuover">
+        </div>
+        <hr>
+        <ul class="member longin">
+            <a href="../index.html">
+                <li>會員登出</li>
+            </a>
+            <a href="one-page-payselect.html">
+                <li>升級方案</li>
+            </a>
+            <a href="admin-user-information.html">
+                <li>編輯個人資料</li>
+            </a>
+        </ul>
+        <hr>
+        <div class="infobox">
+            <ul class="company">
+                <li>COMPANY</li>
+                <a href="one-page-about.html">
+                    <li>關於微笑秘密</li>
+                </a>
+                <a href="one-page-content.html">
+                    <li>聯絡資訊</li>
+                </a>
+            </ul>
+            <ul class="info">
+                <li>INFO</li>
+                <a href="../user_admin_qa.html">
+                    <li>FAQ</li>
+                </a>
+                <a href="one-page-privacy.html">
+                    <li>使用者條款</li>
+                </a>
+                <a href="one-page-userrules.html">
+                    <li>隱私政策</li>
+                </a>
+            </ul>
+            <ul class="service">
+                <li>COSTOMER SERVICE</li>
+                <a href="admin-index.html">
+                    <li>寫秘密</li>
+                </a>
+                <a href="../user_admin_callplan_index.html">
+                    <li>謝幕計畫</li>
+                </a>
+                <a href="../user_admin_will_index.html">
+                    <li>謝幕詞</li>
+                </a>
+                <a href="../user_admin_desire_index.html">
+                    <li>許願</li>
+                </a>
+            </ul>
+            <ul class="also">
+                <li>ALSO ON</li>
+                <a href="https://goo.gl/Yi07X8">
+                    <li>Facebook</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <!-- 第一區塊 -->
+    <main>
+        <div class="sidebyside admin-left">
+            <div class="scrolltofixed-box">
+                <a href="admin-index.html" title="">
+                    <img src="../images/footer_logo_24.png" alt="" width="200">
+                </a>
+                <div class="userbox">
+                    <div class="sidebyside user-left">
+                        <div class="imgbox user-imgbox">
+                            <a href="../new/admin-user-information.html" title=""><img src="images/user.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="sidebyside user-right">
+                        <div class="textetc us-id"><a href="admin-user-information.html" title="">justin wu</a></div>
+                        <div class="sidebyside user-button user-status">一般會員</div>
+                        <a href="one-page-payselect.html" title="" class="sidebyside user-button user-up">升級</a>
+                        <div class="progress-container">
+                            <div class="progress" style="width:30%"></div>
+                        </div>
+                        <p class="progress-info">30 MB 0f 100 MB used</p>
+                        <ul class="user-menu">
+                            <li class="menu-one"><a href="admin-index.html">秘密匣</a></li>
+                            <li class="menu-two"><a href="admin-ss-safeman.html">保管人<span class="remind">3</span></a></li>
+                            <li class="menu-three"><a href="admin-ss-bookman.html">委託人<span class="remind">1</span></a></li>
+                        </ul>
+                        <a href="admin-ss-msbox.html" title="" class="sidebyside user-button receiverbox">信件匣<span class="remind">99</span></a>
+                        <a href="http://www.youtube.com/watch?v=0O2aH4XLbto" title="" class="sidebyside user-up receiverbox video-slamp-link popup-youtube">教學影片</a>
+                    </div>
+                </div>
+                <div class="rule">
+                    <a href="one-page-userrules.html">使用條款</a>
+                    <a href="one-page-privacy.html">隱私權政策</a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebyside admin-right">
+            <ul class="breadcrumbs">
+                <li><a href="admin-index.html">秘密匣</a></li> >
+                <li>秘密收件人 : jacky</li>
+            </ul>
+            <div class="ssbox userfcover">
+                <!-- <div class="userfcover-up">
+                    <input type="file" name="" value="" placeholder="" accept="image/*" class="fileup" title="點擊上傳封面相片">
+                </div> -->
+                <!-- 封面相片 -->
+                <!-- <img src="images/ssimg.jpg" alt=""> -->
+                <!-- <div class="ssbox-info haveimg"> -->
+                <div class="ssbox-info">
+                    <!-- <div class="sidebyside imgbox userimg imgclick">
+                        <img src="images/user.png" alt="">
+                    </div> -->
+                    <p class="to">秘密收件人</p>
+                    <h2 class="sidebyside-bottom">Jacky</h2>
+                    <div class="ss-msinfo ss-msinfo-in sidebyside-bottom">
+                        <p class="sidebyside mail-date ss-death">(1)</p>
+                        <p class="sidebyside mail-date ss-time">(2)</p>
+                        <p class="sidebyside mail-date ss-book">(1)</p>
+                    </div>
+                    <p class="addtime">更新日期 2016/10/13</p>
+                    <p class="viewinfo editss">編輯檢視秘密收件人資料</p>
+                </div>
+            </div>
+            <div class="ssbox">
+                <div class="error">
+                    <span class="sidebyside remind">!</span>
+                    <p class="sidebyside">尚未設定秘密保管人。</p>
+                </div>
+            </div>
+            <div class="ssbox addssms">
+                <a href="admin-addss.html" title=""><h2>新增收件人秘密</h2></a>
+            </div>
+            <div class="ssbox">
+                <div class="ssbox-info">
+                    <div class="editbox">
+                        <img src="images/icon_46.png" alt="" class="delss">
+                        <a href="admin-addss.html" title="">
+                            <img src="images/icon_48.png" alt="">
+                        </a>
+                    </div>
+                    <h2><a href="admin-addss.html" title="">秘密1號</a></h2>
+                    <div class="typebox">
+                        <p class="addtime sidebyside">更新日期 2016/10/13</p>
+                        <p class="addtime sidebyside type-title">類型</p>
+                        <p class="ss-death sidebyside">死亡殞落</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ssbox">
+                <div class="ssbox-info">
+                    <div class="editbox">
+                        <img src="images/icon_46.png" alt="" class="delss">
+                        <a href="admin-addss.html" title="">
+                            <img src="images/icon_48.png" alt="">
+                        </a>
+                    </div>
+                    <h2><a href="admin-addss.html" title="">秘密2號</a></h2>
+                    <div class="typebox">
+                        <p class="addtime sidebyside">更新日期 2016/10/13</p>
+                        <p class="addtime sidebyside type-title">類型</p>
+                        <p class="ss-time sidebyside">時間信秘密 預定送出時間 2100/01/01</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="error">
+                    <span class="sidebyside remind">!</span>
+                    <p class="sidebyside">秘密設定日期還沒死。</p>
+                </div>
+            </div>
+            <div class="ssbox">
+                <div class="ssbox-info">
+                    <div class="editbox">
+                        <img src="images/icon_46.png" alt="" class="delss">
+                        <a href="admin-addss.html" title="">
+                            <img src="images/icon_48.png" alt="">
+                        </a>
+                    </div>
+                    <h2><a href="admin-addss.html" title="">秘密3號</a></h2>
+                    <div class="typebox">
+                        <p class="addtime sidebyside">更新日期 2016/10/13</p>
+                        <p class="addtime sidebyside type-title">類型</p>
+                        <p class="event sidebyside">事件簿秘密 給兒子的生日祝福</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="error">
+                    <span class="sidebyside remind">!</span>
+                    <p class="sidebyside">尚未設定保管執行人。</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/jquery-scrolltofixed-min.js"></script>
+    <script src="../js/jquery-scrollLock.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript">
+    $("#datepicker").datepicker({
+        dateFormat: 'yy-mm-dd'
+    });
+    $('.popup-youtube').magnificPopup({
+        type: 'iframe'
+    });
+    //浮動鎖定
+    $('.scrolltofixed-box').scrollToFixed({
+        zIndex: 0,
+        marginTop: 10,
+        minWidth: 1024,
+    });
+    $('img[alt="menu"]').click(function() {
+        $('.menu').addClass('menu_right');
+        $('.menubg').stop().fadeIn("fast");
+    });
+    $('.addss').click(function() {
+        $('.addss-man,.menubg').stop().fadeIn("fast");
+    });
+    $('.editss').click(function() {
+        $('.addss-editman,.menubg').stop().fadeIn("fast");
+    });
+    $('.delss').click(function() {
+        $('.popup-del,.menubg').stop().fadeIn("fast");
+    });
+    $('.imgclick').click(function() {
+        $('.popup-userimg,.menubg').stop().fadeIn("fast");
+    });
+    $('.addsafeman-addressee').click(function() {
+        $('.popup-addsafeman').stop().fadeIn("fast");
+        $(".addss-editman").fadeOut("fast");
+    });
+    $('.go-w-check').click(function() {
+        $('.popup-go-w-check').stop().fadeIn("fast");
+        $(".popup-addsafeman").fadeOut("fast");
+    });
+
+    $('.menubg,.menuover').click(function() {
+        $('.menu').removeClass('menu_right');
+        $(".menubg").fadeOut("fast");
+        $(".popup").fadeOut("fast");
+    });
+    $('.popup-close').click(function() {
+        $('.popup,.menubg').stop().fadeOut("fast");
+    });
+
+    //鎖定視窗
+    $('.scrollbox,.menubg,.menu').scrollLock();
+    </script>
+</body>
+
+</html>
